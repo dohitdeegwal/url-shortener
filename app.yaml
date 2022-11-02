@@ -1,0 +1,6 @@
+runtime: python37
+env_variables:
+  CLOUD_SQL_USERNAME: admin
+  CLOUD_SQL_PASSWORD: admin
+  CLOUD_SQL_DATABASE_NAME: data
+  CLOUD_SQL_CONNECTION_NAME: surl-315511:asia-south1:project

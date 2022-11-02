@@ -1,0 +1,7 @@
+
+validators
+flask
+PyMySQL
+SQLAlchemy
+Flask-Session
+flask_session

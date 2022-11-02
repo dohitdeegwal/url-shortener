@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="home">
+  Shorten Your URLs
+</div>   
+
+           
+  <form action="/" method="post">
+    <div class="form-inline ">  
+      <div class="my-3 button">
+        <input name="ourl" autocomplete="off" placeholder="Paste Your URL Here" type="text">
+      </div>
+      <div class="button">
+        <button type="submit" class="btn btn-dark">Convert</button>
+      </div>
+    </div>
+  </form>  
+ 
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h1 class="home">Change Password</h1>
+
+{%if message%}
+<div class="alert alert-danger" style="text-align: center;" role="alert">
+  {{message}}
+</div>
+{%endif%}
+
+
+
+<form action="/password" method="post">
+  <div class="form-group  ">
+    <div class="m-3 button" id="change_username">
+      <input autocomplete="off" class="form-control" name="username" placeholder="Username" type="text">
+    </div>
+
+    <div class="m-3 button" id="change_pass">
+      <input class="form-control" name="password" placeholder="Password" type="password">
+    </div>
+
+    <div class="m-3 button" id="change_newpass">
+      <input class="form-control" name="new_password" placeholder="New Password" type="password">
+    </div>
+    <div class="m-3 button" id="change_confirm">
+      <input class="form-control" name="con_password" placeholder="Confirm New Password" type="password">
+    </div>
+    <div class="button">
+      <button class="btn btn-dark" type="submit">Change Password</button>
+    </div>
+  </div>
+</form>
+{% endblock %}

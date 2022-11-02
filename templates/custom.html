@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="home">
+  Shorten Your URLs
+</div>   
+
+
+<form action="/custom" method="post">
+  <div class="form-group ">  
+    <div class="m-3 button" id="custom_paste">
+      <input
+        autocomplete="off"
+        class="form-control"
+        name="ourl"
+        placeholder="Paste URL Here"
+        type="text"
+      >
+    </div>
+    <div class="m-3 button" id="custom_url">
+      <input
+        class="form-control"
+        name="curl"
+        placeholder="Custom URL"
+        type="text"
+      >
+    </div>
+    <div class="button">
+    <button class="btn btn-dark" type="submit">Convert</button>
+  </div>
+  </div>  
+</form>
+
+  
+{% endblock %}
